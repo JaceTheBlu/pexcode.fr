@@ -1,5 +1,5 @@
 # Use the official Hugo image as a base
-FROM klakegg/hugo:0.101.0-ext-alpine
+FROM klakegg/hugo:latest
 
 # Install any additional tools you need
 RUN apk add --no-cache \
