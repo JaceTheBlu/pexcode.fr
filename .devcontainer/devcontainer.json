@@ -1,0 +1,23 @@
+{
+  "name": "Hugo DevContainer",
+  "dockerFile": "Dockerfile",
+  "appPort": [
+      1313
+  ],
+  "customizations": {"vscode": {
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-vscode.go",
+        "ms-vscode.remote-containers",
+        "ms-vscode.git"
+    ],
+
+  }},
+  "postCreateCommand": "hugo version",
+  "mounts": [
+      "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ],
+  "remoteUser": "root"
+}
