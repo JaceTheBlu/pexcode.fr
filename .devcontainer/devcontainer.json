@@ -11,9 +11,9 @@
     "extensions": [
         "ms-vscode.go",
         "ms-vscode.remote-containers",
-        "ms-vscode.git"
-    ],
-
+        "ms-vscode.git",
+        "esbenp.prettier-vscode"
+    ]
   }},
   "postCreateCommand": "hugo version",
   "mounts": [
